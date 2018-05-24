@@ -284,23 +284,69 @@ padding-top: 5px;
 /* SLIDE 3*/
 #slide3 .slide_inside {
 	margin-top: 50px;
+	height: 500px;
+	background-color: lightgrey;
 }
 
-/* positionnement des personnages animés */
-#trooper, #clone {
-	position: absolute;
-	left:-180px; top: 300px;
-	/* on tourne légèrement les images */
-	transform: rotate(10deg);
-	/* et on prévoit une transition */
-	transition: all 1.4s cubic-bezier(.49,.22,.52,1);
-}
-/* positionnement différé d'un des 2 personnages */
-#clone {
-	left: -280px;
-	top: 400px;
+#work {
+	margin-left: 45%;
+	width: 80px;
+	height: 80px;
 }
 
+.container-work {
+	display: flex;
+	line-height: 0px;
+	color: black;
+}
+
+#year {
+display: flex;
+flex:1;
+flex-direction: column;
+text-align: center;
+border-right:1px black solid;
+}
+
+#travail {
+display: flex;
+flex:1;
+flex-direction: column;
+text-align: center;
+border-right:1px black solid;
+}
+
+#stat {
+	display: flex;
+flex:1;
+flex-direction: column;
+text-align: center;
+
+}
+.qualite {
+	width: 100%;
+	height: 30px;
+	background-color: grey;
+	text-align: center;
+	color: lightblue;
+	margin: 0 auto;
+	font-size: 20px;
+	margin-top: 1%;
+}
+
+#defile  {
+
+	width: 50%;
+	height: 100px;
+	margin: 0 auto;
+
+}
+
+.def {
+	color: black;
+	text-align: center;
+	line-height: 5px;
+}
 /* décalage du conteneur vers le haut */
 #s2:target ~ #wrap {
 	top:-1000px;
@@ -311,25 +357,10 @@ padding-top: 5px;
 #s2:target ~ #wrap #slide2 { background-position: 50% 0%; }
 #s2:target ~ #wrap #slide3 { background-position: 50% -30%; }
  
-/* mouvements d'un des personnages */
-#s2:target ~ #wrap #trooper { 
-	left: -180px;
-	top: -100px;
-	transform: rotate(-7deg);
-}
- 
-/* mouvements de l'autre personnage */
-#s2:target ~ #wrap #clone {
-	left: -350px;
-	top: 50px;
-	transform: rotate(0deg);
 }
  
 /* juste pour la déco (lueur sur le lien cliqué) */
-#s2:target ~ #wrap #nav li:first-child + li a {
-	color: darkred;
-	font-weight: bold;
-}
+#s2:target ~ #wrap #nav li:first-child + li a {color: darkred; font-weight: bold;}
 
 /* vers Slide 1 */
 #s1:target ~ #wrap { top:0px; }
@@ -337,8 +368,7 @@ padding-top: 5px;
 #s1:target ~ #wrap #slide1 { background-position: 50% 0%; }
 #s1:target ~ #wrap #slide2 { background-position: 50% -35%; }
 #s1:target ~ #wrap #slide3 { background-position: 50% -60%; }
-#s1:target ~ #wrap #trooper { left: -180px; top: 300px; transform: rotate(10deg); }
-#s1:target ~ #wrap #clone { left: -280px; top: 300px; transform: rotate(10deg); }
+
  
 /* vers Slide 3 */
 #s3:target ~ #wrap { top:-2150px; }
@@ -346,5 +376,4 @@ padding-top: 5px;
 #s3:target ~ #wrap #slide1 { background-position: 50% 60%; }
 #s3:target ~ #wrap #slide2 { background-position: 50% 35%; }
 #s3:target ~ #wrap #slide3 { background-position: 50% 0%; }
-#s3:target ~ #wrap #trooper { left:-1500px;top:-1000px; transform: rotate(-15deg); }
-#s3:target ~ #wrap #clone { left:-1000px;top: -800px; transform: rotate(-15deg); }
+

@@ -106,4 +106,35 @@ function puzzleMouseOut() {
     document.getElementById("show").innerHTML = "";
 }
 
+//largeur du texte (en pixels)
+var marqueewidth=350;
+//hauteur du texte défilant
+var marqueeheight=350;
+//vitesse de défilement 
+var speed=2;
+//contenu
+var marqueecontents='<font face="Arial">Nous avons besoin de vos clics <strong><big>pour vous faire gagner de l\'argent</big> ---><a href="http://www.outils-web.com">outils-web.com</a>, </strong></font>';
 
+document.write('<marquee direction="up" scrollAmount='+speed+'; style="width:'+marqueewidth+';height:'+marqueeheight+'">'+marqueecontents+'</marquee>');
+
+function regenerate(){
+window.location.reload();
+}
+
+function intializemarquee(){
+document.cmarquee01.document.cmarquee02.document.write(marqueecontents);
+document.cmarquee01.document.cmarquee02.document.close();
+thelength=document.cmarquee01.document.cmarquee02.document.height;
+scrollit();
+}
+
+function scrollit(){
+if (document.cmarquee01.document.cmarquee02.top>=thelength*(-1)){
+document.cmarquee01.document.cmarquee02.top-=speed;
+setTimeout("scrollit()",100);
+}
+else{
+document.cmarquee01.document.cmarquee02.top=marqueeheight;
+scrollit();
+}
+}
