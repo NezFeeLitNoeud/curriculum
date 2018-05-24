@@ -334,19 +334,6 @@ text-align: center;
 	margin-top: 1%;
 }
 
-#defile  {
-
-	width: 50%;
-	height: 100px;
-	margin: 0 auto;
-
-}
-
-.def {
-	color: black;
-	text-align: center;
-	line-height: 5px;
-}
 /* décalage du conteneur vers le haut */
 #s2:target ~ #wrap {
 	top:-1000px;
