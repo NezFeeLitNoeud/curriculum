@@ -43,7 +43,7 @@ body {
 #slide1, #slide2, #slide3 {
 	/* height à adapter avec media queries */
 	height: 950px;
-	padding-top:100px;
+	padding-top:90px;
 	/* préparation des transitions */
 	transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1.35);
 }
@@ -58,13 +58,14 @@ body {
 	margin: 0 auto;
 	position: relative;
 	background-color: rgba(0, 0, 0, .6);
-	padding: 20px;
+	padding: 1px;
 }
  /* SLIDE 1*/
 #slide1 .slide_inside {
 	color: black;
 	text-align: center;
 	background-color: lightgrey;
+	margin-top: -2%;
 }
 
 #info {
@@ -99,7 +100,7 @@ img {
 	color: lightblue;
 	margin: 0 auto;
 	height: 30px;
-	width: 100%;
+	width: 95%;
 	font-size: 20px;
 }
 
@@ -142,7 +143,7 @@ img {
 #slide2 .slide_inside  {
 
 	width: 700px;
-	height: 500px;
+	height: 550px;
 	text-align: center;
 	background-color: lightgrey;
 	color: black;
@@ -229,7 +230,7 @@ img {
 	color: lightblue;
 	margin: 0 auto;
 	height: 30px;
-	width: 100%;
+	width: 95%;
 	font-size: 20px;}
 
 
@@ -283,7 +284,7 @@ padding-top: 5px;
 
 /* SLIDE 3*/
 #slide3 .slide_inside {
-	margin-top: 50px;
+	margin-top:95px;
 	height: 500px;
 	background-color: lightgrey;
 }
@@ -324,14 +325,14 @@ text-align: center;
 
 }
 .qualite {
-	width: 100%;
+	width: 95%;
 	height: 30px;
 	background-color: grey;
 	text-align: center;
 	color: lightblue;
 	margin: 0 auto;
 	font-size: 20px;
-	margin-top: 1%;
+	margin-top: 2%;
 }
 
 /* décalage du conteneur vers le haut */
