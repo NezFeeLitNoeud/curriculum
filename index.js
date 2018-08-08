@@ -36,27 +36,27 @@ function maisonMouseOut() {
 
 
 setTimeout(function() {
-	document.getElementById("coloor").style.color = "darkred";
+  document.getElementById("coloor").style.color = "darkred";
 
 }, 1000); 
 setTimeout(function() {
-	document.getElementById("coloor1").style.color = "darkred";
+  document.getElementById("coloor1").style.color = "darkred";
 
 }, 1500); 
 setTimeout(function() {
-	document.getElementById("coloor2").style.color = "darkred";
+  document.getElementById("coloor2").style.color = "darkred";
 
 }, 2000); 
 setTimeout(function() {
-	document.getElementById("coloor3").style.color = "darkred";
+  document.getElementById("coloor3").style.color = "darkred";
 
 }, 2500); 
 setTimeout(function() {
-	document.getElementById("coloor4").style.color = "darkred";
+  document.getElementById("coloor4").style.color = "darkred";
 
 }, 3000); 
 setTimeout(function() {
-	document.getElementById("coloor5").style.color = "darkred";
+  document.getElementById("coloor5").style.color = "darkred";
 
 }, 3500); 
 

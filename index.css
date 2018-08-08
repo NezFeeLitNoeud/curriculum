@@ -221,7 +221,7 @@ img {
 	width: 20px;
 	height: 20px;
 	margin-left: 25%;
-	margin-top: 12.8%;
+	margin-top: 14%;
 }
 
 .loisir {
@@ -352,7 +352,7 @@ text-align: center;
 
 /* vers Slide 1 */
 #s1:target ~ #wrap { top:0px; }
-#s1:target ~ #wrap #nav li:first-child a {color: darkred; font-weight: bold;}
+#s1:target ~ #wrap #nav li:nth-child(2) a {color: darkred; font-weight: bold;}
 #s1:target ~ #wrap #slide1 { background-position: 50% 0%; }
 #s1:target ~ #wrap #slide2 { background-position: 50% -35%; }
 #s1:target ~ #wrap #slide3 { background-position: 50% -60%; }
